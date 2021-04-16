@@ -1,0 +1,593 @@
+body{
+    background-image: url(../assets/Images/back_main.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #464646;
+}
+
+.battle{
+    background-image: url(../assets/Images/battle_back.jpeg);
+}
+
+.error{
+    color: red;
+}
+
+.success{
+    color: green;
+}
+
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: red;
+}
+
+.logo button{
+    background-image: url(../assets/Images/logo.png);
+    cursor: pointer;
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+    border: none;
+    outline: none;
+}
+
+.nav_but input{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.nav_but input:hover{
+    transform: scale(1.1);
+    border-bottom: 2px solid white;
+    transition: 0.1s;
+}
+
+.nav_but:nth-child(4){
+    display: flex;
+    align-items: inherit;
+}
+
+.nav_but:nth-child(4) input{
+    height: 24px;
+}
+
+.avatar_casual button{
+    background-image: url(../assets/Images/avatar_casual.jpeg);
+    cursor: pointer;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 200px;
+    border: none;
+    margin-right: 10px;
+    outline: none;
+}
+
+.avatar button{
+    cursor: pointer;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 200px;
+    border: none;
+    margin-right: 10px;
+    outline: none;
+}
+
+.menu{
+    position: fixed;
+    top: 25%;
+    left: 25%;
+}
+
+.form_menu{
+    display: flex;
+}
+
+.play_but button{
+    background-image: url(../assets/Images/play_but.jpeg);
+    filter: grayscale(100%);
+    cursor: pointer;
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    border: 3px solid gray;
+    margin-right: 10px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.play_but button:hover{
+    filter: grayscale(0%);
+    font-weight: 700;
+    font-size: 2em;
+    transition: 0.2s;
+    cursor: pointer;
+    border: 3px solid red;
+}
+
+.collection_but button{
+    background-image: url(../assets/Images/col_but.jpg);
+    filter: grayscale(100%);
+    cursor: pointer;
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    border: 3px solid gray;
+    margin-right: 10px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.collection_but button:hover{
+    filter: grayscale(0%);
+    font-weight: 700;
+    font-size: 2em;
+    transition: 0.2s;
+    cursor: pointer;
+    border: 3px solid red;
+}
+
+.logout_but button{
+    background-image: url(../assets/Images/logout.jpg);
+    margin-top: 10px;
+    filter: grayscale(100%);
+    cursor: pointer;
+    background-size: cover;
+    height: 200px;
+    width: 810px;
+    border-radius: 10px;
+    border: 3px solid gray;
+    margin-right: 10px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.logout_but button:hover{
+    filter: grayscale(0%);
+    font-weight: 700;
+    font-size: 2em;
+    transition: 0.2s;
+    cursor: pointer;
+    border: 3px solid red;
+}
+
+.avatar_menu{
+    color: white;
+    width: 300px;
+    padding-top: 50px;
+    margin: 0 auto;  
+}
+
+.buttons button{
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    background: linear-gradient(180deg,#26ecf4 0,#04657a);
+}
+
+.buttons button:hover{
+    background: linear-gradient(180deg,#26ecf4 0,#03404e);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.collection{
+    margin: 10px;
+}
+
+.collection p{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 50px;
+} 
+
+.collection img{
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+}
+
+.main_collection{
+    display: flex;
+}
+
+.decks{
+    margin-top: 40px;
+    min-width: 150px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.choose_decks{
+    display: flex;
+    flex-direction: column;
+}
+
+.choose_decks button{
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 50px;
+    background: linear-gradient(180deg,#26ecf4 0,#04657a);
+}
+
+.choose_decks button:hover{
+    background: linear-gradient(180deg,#26ecf4 0,#03404e);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.collection button{
+    position: relative;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button>img{
+    border-radius: 20px;
+}
+
+img{
+    border-radius: 20px;
+}
+
+.collection button:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+.collection button:hover.notactive{
+    filter: grayscale(0%);
+}
+
+.collection button:hover .delete_card{
+    display: block;
+}
+
+.delete_card{
+    position: absolute;
+    bottom: 15px;
+    left: 40%;
+    display: none;
+    color: black;
+    font-size: 1.2em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    background-color: white;
+    padding: 3px;
+}
+
+.notactive{
+    filter: grayscale(100%);
+}
+
+.choosedecks p{
+    font-size: 1.4em;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+}
+
+.choose_deck{
+    display: flex;
+    justify-content: center;
+}
+
+.choose_deck button{
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 50px;
+    width: 100px;
+    background: linear-gradient(180deg,#26ecf4 0,#04657a);
+}
+
+.choose_deck button:hover{
+    background: linear-gradient(180deg,#26ecf4 0,#03404e);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#chooseEnemy p{
+    font-size: 1.4em;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+}
+
+.battle_board{
+    display: flex;
+    justify-content: center;
+}
+
+.battle_board button{
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 50px;
+    width: 100px;
+    background: linear-gradient(180deg,#26ecf4 0,#04657a);
+}
+
+.battle_board button:hover{
+    background: linear-gradient(180deg,#26ecf4 0,#03404e);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#chooseEnemy button{
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(180deg,#26ecf4 0,#04657a);
+}
+
+#chooseEnemy button:hover{
+    background: linear-gradient(180deg,#26ecf4 0,#03404e);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#chooseEnemy select{
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, .body {
+    height: 100%;
+}
+
+.body {
+    position: relative;
+}
+
+#hand .card img:hover {
+    box-shadow: 0px 0px 1vh white;
+}
+
+.card img {
+    border-radius: 3vh;
+    width: 16.2vh;
+    height: 25.2vh;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+#timer {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    width: 9vh;
+    height: 9vh;
+    background-color: rgba(100, 20, 30, 0.8);
+    position: absolute;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vh;
+    transform: translate(0, -50%);
+    color: white;
+    top: 50vh;
+    right: 0px;
+    border-radius: 3vh;
+}
+
+#hands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    height: 100%;
+    border-collapse: collapse;
+}
+
+#enemy_hand > .card > img {
+    width: 16.2vh;
+    height: 25.2vh;
+    transform: translate(0, -40%);
+}
+
+#enemy_hand {
+    transform: translate(0, -8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 6px;
+
+    top: 0px;
+    width: fit-content;
+    height: 8vh;
+    background-color: rgba(100, 20, 30, 0.5);
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+}
+
+#hand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: fit-content;
+    height: 25.2vh;
+    background-color: rgba(100, 20, 30, 0.5);
+    border-radius: 2vh;
+}
+
+.card {
+    position: relative;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.health {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    height: 2.8vh;
+    width: 2.8vh;
+    position: absolute;
+    top: 13vh;
+    right: 2vh;
+    border-radius: 50%;
+    background-color: green;
+    border: 3px solid black;
+}
+
+#enemy_battlefield {
+    border-radius: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 25.2vh;
+    background-color: rgba(100, 20, 30, 0.5);
+}
+
+#player_battlefield {
+    border-radius: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 25.2vh;
+    background-color: rgba(100, 20, 30, 0.5);
+}
+
+#battlefield {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#battle_container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#player_info {
+    position: absolute;
+    left: 5vh;
+    bottom: 5vh;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vh;
+}
+
+#player_info img {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+
+}
+
+
+#enemy_info {
+    position: absolute;
+    right: 5vh;
+    top: 5vh;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vh;
+}
+
+#enemy_info img {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+
+}
+
+#notification {
+    width: 50vh;
+    height: 30vh;
+    border-radius: 3vh;
+    background-color: gray;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vh;
+    font-weight: bold;
+
+
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.turn {
+    background-color: rgb(80, 168, 95);
+    border-radius: 3vh;
+    padding: 8px;
+}

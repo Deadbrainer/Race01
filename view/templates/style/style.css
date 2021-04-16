@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+#hand .card img:hover {
+    box-shadow: 0px 0px 1vh white;
+}
+
+.card img {
+    border-radius: 3vh;
+    width: 16.2vh;
+    height: 25.2vh;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+#timer {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    width: 9vh;
+    height: 9vh;
+    background-color: rgba(100, 20, 30, 0.8);
+    position: absolute;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vh;
+    transform: translate(0, -50%);
+    color: white;
+    top: 50vh;
+    right: 0px;
+    border-radius: 3vh;
+}
+
+#hands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    height: 100%;
+    border-collapse: collapse;
+}
+
+#enemy_hand > .card > img {
+    width: 16.2vh;
+    height: 25.2vh;
+    transform: translate(0, -40%);
+}
+
+#enemy_hand {
+    transform: translate(0, -8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 6px;
+
+    top: 0px;
+    width: fit-content;
+    height: 8vh;
+    background-color: rgba(100, 20, 30, 0.5);
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+}
+
+#hand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: fit-content;
+    height: 25.2vh;
+    background-color: rgba(100, 20, 30, 0.5);
+    border-radius: 2vh;
+}
+
+.card {
+    position: relative;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.health {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    height: 2.8vh;
+    width: 2.8vh;
+    position: absolute;
+    top: 13vh;
+    right: 2vh;
+    border-radius: 50%;
+    background-color: green;
+    border: 3px solid black;
+}
+
+#enemy_battlefield {
+    border-radius: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 25.2vh;
+    background-color: rgba(100, 20, 30, 0.5);
+}
+
+#player_battlefield {
+    border-radius: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 25.2vh;
+    background-color: rgba(100, 20, 30, 0.5);
+}
+
+#battlefield {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#battle_container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#player_info {
+    position: absolute;
+    left: 5vh;
+    bottom: 5vh;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vh;
+}
+
+#player_info img {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+
+}
+
+
+#enemy_info {
+    position: absolute;
+    right: 5vh;
+    top: 5vh;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vh;
+}
+
+#enemy_info img {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+
+}
+
+#notification {
+    width: 50vh;
+    height: 30vh;
+    border-radius: 3vh;
+    background-color: gray;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vh;
+    font-weight: bold;
+
+
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

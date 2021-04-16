@@ -1,0 +1,104 @@
+body{
+    background-image: url(../assets/Images/back_start.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #464646;
+}
+.error{
+    color: red;
+}
+
+.success{
+    color: green;
+}
+
+h1{
+    text-align: center;
+    color:white;
+}
+
+.form{
+    padding-top: 40px;
+}
+
+.fields{
+    margin: 0 auto;
+    width: 300px;
+    color: white;
+}
+
+.fields p {
+    color:#0fb4d2;
+    font-size: 1.1em;
+}
+
+.fields input{
+    outline: none;
+    padding: 5px 10px;
+    font-size: 1.1em;
+    width: 100%;
+    border: none;
+    background: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.log_reg{
+    text-align: center;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.log_reg input{
+    padding: 10px 40px 10px 40px;
+    text-align: center;
+    color: white;
+    background: none;
+    font-size: 1.5em;
+    border: none;
+    width: 200px;
+    outline: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-bottom: 3px solid white;
+}
+
+.log_reg input:hover{
+    border-bottom: 3px solid lightskyblue;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.buttons{
+    margin: 0 auto;
+    width: 300px;
+}
+
+.buttons button{
+    width: 100%;
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5em;
+    background: linear-gradient(180deg,#26ecf4 0,#04657a);
+}
+
+.buttons button:hover{
+    background: linear-gradient(180deg,#26ecf4 0,#03404e);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.buttons input{
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}

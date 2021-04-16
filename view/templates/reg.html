@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration: Marvel`s Legends</title>
+    <link rel="stylesheet" href="view/templates/style/login_reg_style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h1>Register new Marvel`s Legends Account</h1>
+
+        <div class="log_reg">
+            <form action="index.php" method="post">
+                <p>
+                    <input type="submit" name="go_log" value="Login">
+                    <input type="submit" name="go_reg" value="Register">
+                </p>
+            </form>
+        </div>
+        <form action="index.php" method="post">
+            <div class="fields">
+                <p>
+                <p>Login</p>
+                <input type="text" required placeholder="Login" autocomplete="off" name="login"></input>
+                <p>
+                <p>Password</p>
+                <input type="password" required placeholder="Password" name="password"></input>
+                </p>
+                <p>
+                <p>Confirm Password</p>
+                <input type="password" required placeholder="Confirm password" name="confirm_password"></input>
+                </p>
+                <p>
+                <p>First Name</p>
+                <input type="text" required placeholder="First Name" autocomplete="off" name="first_name"></input>
+                </p>
+                <p>
+                <p>Last Name</p>
+                <input type="text" required placeholder="Last Name" autocomplete="off" name="last_name"></input>
+                </p>
+                <p>
+                <p>Email</p>
+                <input type="email" required placeholder="Email" autocomplete="off" name="email"></input>
+                </p>
+            </div>
+            <div class="buttons">
+                <p>
+                    <button type="submit" name="reg">Register</button>
+                </p>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

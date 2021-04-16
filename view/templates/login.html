@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login: Marvel`s Legends</title>
+    <link rel="stylesheet" href="view/templates/style/login_reg_style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h1>Login Marvel`s Legend Account</h1>
+        <div class="log_reg">
+            <form action="index.php" method="post">
+                <p>
+                    <input type="submit" name="go_log" value="Login">
+                    <input type="submit" name="go_reg" value="Register">
+                </p>
+            </form>
+        </div>
+        <form action="index.php" method="post">
+        <div class="fields">
+            <p>
+            <p>Login:</p>
+            <input type="text" required placeholder="Login" autocomplete="off" name="login"></input>
+            <p>
+            <p>Password:</p>
+            <input type="password" required placeholder="Password" autocomplete="off" name="password"></input>
+            </p>
+        </div>
+        <div class="buttons">
+            <p>
+                <button type="submit" name="log_in">Log in</button>
+            </p>
+            <form action="index.php" method="post">
+                <p>
+                    <input type="submit" name="go_remind" value="Forgot password?">
+                </p>
+            </form>
+        </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
